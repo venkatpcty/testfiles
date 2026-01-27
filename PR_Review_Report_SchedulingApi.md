@@ -508,7 +508,7 @@ This PR introduces new V2 DTOs, read models, and adapters for the Availabilities
 
 ## 🤖 Automated Fix Available
 
-**The code currently has critical compilation errors that will prevent it from building.**
+**I've completed the comprehensive PR review and identified 32 issues across 12 categories. The code currently has critical compilation errors that will prevent it from building.**
 
 **Summary of Critical Issues:**
 - 🔴 5 compilation errors (duplicate properties, missing namespaces, class name mismatches)
@@ -516,6 +516,25 @@ This PR introduces new V2 DTOs, read models, and adapters for the Availabilities
 - 🔴 1 mandatory SchedulerCommon testing requirement
 - 🟠 4 major code quality issues
 - 🟡 5 documentation issues
+
+**Would you like me to fix these issues automatically?**
+
+If yes, I will:
+1. ✅ Fix duplicate `Name` property in AvailabilityDtoV2.cs
+2. ✅ Rename class from `AvailabilityReadModel` to `AvailabilityReadModelV2`
+3. ✅ Add proper namespace to AvailabilityTestDto.cs
+4. ✅ Move AvailabilityTestDto.cs from Constants/ to Dtos/ folder
+5. ✅ Remove all unused using directives
+6. ✅ Remove duplicate log statement and fix logging pattern
+7. ✅ Remove unnecessary .ConfigureAwait(false)
+8. ✅ Add comprehensive XML documentation to all files
+9. ✅ Run SchedulerWorkEngine tests (MANDATORY)
+10. ✅ Run SchedulingUIApi tests (MANDATORY due to SchedulerCommon change)
+11. ✅ Run SchedulingApi tests (ADVISORY)
+12. ✅ Provide guidance on team notification and remaining actions
+13. ✅ Request build verification from you
+
+**Type 'yes' or 'fix it' to proceed with automated fixes.**
 
 ---
 
